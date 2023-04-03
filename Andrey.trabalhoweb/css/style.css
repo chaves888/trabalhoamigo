@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    outline: none;
+
+}
+/*cabecalho*/
+
+body{
+    background-color: #ffffff; 
+}
+section,
+footer{
+    padding: 54px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color:#0000009c ;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #fc1d00;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: #362e2e;
+}
+
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav a{
+    color: white;
+    font-size: 40px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn)::after{
+    content: "" ;
+    background-color: #f80000;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+
+}
+nav ul A:hover::after{
+    width: 100%;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+.banner .banner-text p{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+/* end cabecalho */
+
+/* faça mais */
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+
+}
+.faca-mais .faca-mais-text{
+    width:  50%;
+    padding: 0 40px ;
+}
+.faca-mais.faca-mais-text h3{
+    font-size: 56px;
+}
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+}
+
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+
+.faca-mais .faca-mais-img{
+    width: 100%;
+}
+/* end faca-mais*/
+
+
+/* footer*/
+.footer{
+    background-color: #41454b;
+    text-align: center;
+}
+.footer i{
+    color: #fa0000;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+/* end footer*/
+
+/*Pagina sobre*/
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+.sobre .sobre-img{
+    width: 50%;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*end Pagina sobre*/
+
+
+
+/* Pagina de contato*/
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: #fa0000;
+    border-radius: 14px;
+    margin-right:  50px;
+    height: fit-content;
+}
+
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom:  10px;
+}
+.contato-info .left-side div i{
+    font-size: 24px;
+    margin-right:20px;
+    color: white;
+}
+.contato-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
+
+.contato .right-side{
+    width: 50%;
+}
+.contato-info .right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+
+.contato-info .right-side input:focus,
+.contato-info .right-side textarea:focus{
+    border-color: #d40303;
+}
+.contato-info .right-side textarea{
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+.contato-info .right-side button{
+    border: none;
+}
